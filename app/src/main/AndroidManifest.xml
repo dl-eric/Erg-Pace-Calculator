@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ergpacecalculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/erg_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PaceCalculator"
+            android:label="@string/title_activity_pace_calculator" >
+        </activity>
+        <activity
+            android:name=".WattCalculator"
+            android:label="@string/title_activity_watt_calculator" >
+        </activity>
+        <activity
+            android:name=".Split"
+            android:label="@string/title_activity_split" >
+        </activity>
+        <activity
+            android:name=".Distance"
+            android:label="@string/title_activity_distance" >
+        </activity>
+        <activity
+            android:name=".Time"
+            android:label="@string/title_activity_time" >
+        </activity>
+        <activity
+            android:name=".WattsToPace"
+            android:label="@string/title_activity_watts_to_pace" >
+        </activity>
+        <activity
+            android:name=".PaceToWatts"
+            android:label="@string/title_activity_pace_to_watts" >
+        </activity>
+    </application>
+
+</manifest>

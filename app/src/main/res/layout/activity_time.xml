@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ergpacecalculator.Time">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00"
+                android:id="@+id/timeOutput"
+                android:layout_marginTop="56dp"
+                android:textSize="84sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t_Time"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/t_Time"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:text="Calculate"
+                android:id="@+id/CalculateTimeButton"
+                android:onClick="calculate"
+                android:layout_gravity="center_horizontal" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/distanceInput"
+                android:textSize="36sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/Distance"
+                android:id="@+id/t_distance"
+                android:layout_gravity="center_horizontal" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="95dp"
+                    android:text="00"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:textSize="36sp"
+                    android:gravity="end"
+                    android:id="@+id/mSplitInput" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="36sp"/>
+                <EditText
+                    android:layout_width="95dp"
+                    android:text="00"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:textSize="36sp"
+                    android:id="@+id/sSplitInput"
+                    android:maxLength="2"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/t_Pace"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
